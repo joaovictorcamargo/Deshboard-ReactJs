@@ -22,13 +22,8 @@
 }
 
 .sidebar__title > div > img {
-  width: 75px;
+  width: 175px;
   object-fit: contain;
-}
-
-.sidebar__title > div > h1 {
-  font-size: 18px;
-  display: inline;
 }
 
 .sidebar__title > i {

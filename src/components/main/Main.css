@@ -25,11 +25,6 @@ main {
   margin-bottom: 5px;
 }
 
-.card_inner > div {
-  display: flex;
-  align-items: center;
-}
-
 .main__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -37,19 +32,23 @@ main {
   margin: 20px 0;
 }
 
+.card > div {
+  flex-direction: row;
+  justify-content: center;
+}
+
 .card {
   display: row;
   flex-direction: row;
   justify-content: space-around;
-  height: 130px;
-  padding: 25px;
+  height: 200px;
   border-radius: 15px;
   background: #ffffff;
   box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
 }
 
 .card_inner {
-  display: row;
+  grid-gap: 5px;
   padding-top: 25px;
 }
 
@@ -63,21 +62,10 @@ main {
   margin-left: 62px;
 }
 
-.icon-category > p {
-  margin-left: 5px;
-}
-
 .card_inner > h1 {
   font-size: 17px;
   margin-left: 62px;
   margin-top: 30px;
-}
-
-.charts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 50px;
 }
 
 .charts__left {
@@ -93,27 +81,10 @@ main {
   justify-content: space-between;
 }
 
-.charts__left__title > div > h1 {
-  font-size: 24px;
-  color: #2e4a66;
-  margin-bottom: 5px;
-}
-
 .charts__left__title > div > p {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   color: #a5aaad;
-}
-
-.charts__left__title > i {
-  color: #ffffff;
-  font-size: 20px;
-  background: #ffc100;
-  border-radius: 200px 0px 200px 200px;
-  -moz-border-radius: 200px 0px 200px 200px;
-  -webkit-border-radius: 200px 0px 200px 200px;
-  border: 0px solid #000000;
-  padding: 15px;
 }
 
 .charts__right {

@@ -23,14 +23,12 @@ const Chart = () => {
   ];
   return (
     <div style={{ marginTop: "15px" }}>
-      <XYPlot height={300} width={300}>
+      <XYPlot height={300} width={950}>
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
-        <LineSeries data={data} color="red" />
-        <LineSeries data={data} color="purple" />
-        <LineSeries data={data} color="yellow" />
+        <LineSeries data={data} color="#10f009"/>
       </XYPlot>
     </div>
   );
